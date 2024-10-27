@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product.css" />
+</head>
+
+<body>
+  <nav id="top">
+    <a href="/"><img src="./assets/amazon_logo.png" width="100" alt="Amazon Logo" /></a>
+    <div class="nav-country">
+      <img src="./assets/location_icon.png" height="20" alt="Country" />
+      <div>
+        <p>Deliver to</p>
+        <h1>Qena, Egypt</h1>
+      </div>
+    </div>
+    <div class="nav-search">
+      <div class="nav-search-category">
+        <a href="./ajax.html">
+
+          <p>All</p>
+          <img src="./assets/dropdown_icon.png" height="12" alt="Dropdown" />
+        </a>
+      </div>
+      <!-- <input type="text" class="nav-search-input" placeholder="Search" />
+      <img
+        src="./assets/search_icon.png"
+        alt="Search"
+        class="nav-search-icon"
+      /> -->
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <br>
+      <ul id="results"></ul>
+      <select id="productOptions" style="display: none;"></select>
+    </div>
+    <div class="nav-language">
+      <img src="./assets/us_flag.png" width="25px" alt="Language-EN" />
+      <p>EN</p>
+      <img src="./assets/dropdown_icon.png" width="8px" />
+    </div>
+    <div class="nav-text">
+      <p>Hello, Sign in</p>
+      <h1>
+        Account & Lists
+        <img src="./assets/dropdown_icon.png" width="8px" alt="" />
+      </h1>
+    </div>
+    <div class="nav-text">
+      <p>Return</p>
+      <h1>& Orders</h1>
+    </div>
+    <a href="checkout.html" class="nav-cart">
+      <div class="cart-quantity js-cart-quantity" style="color: orange">
+        0
+      </div>
+      <img src="./images/icons/cart-icon.png" alt="Cart" width="35px" />
+      <div class="cart-text">Cart</div>
+    </a>
+  </nav>
+
+  <div class="nav-bottom">
+    <div>
+      <img src="./assets/menu_icon.png" width="25px" />
+      <p>All</p>
+    </div>
+    <p>Today's Deals</p>
+    <p>Customer Services</p>
+    <p>Registry</p>
+    <p>Gift Cards</p>
+    <p>Gift Cards</p>
+  </div>
+
+  <p class="breadcrum">Video Games > PC > Accessories > Headset</p>
+
+  <div class="prodcut-display">
+    <div class="product-d-image">
+      <div class="product-icons">
+        <img class="test" src="./assets/product_img.jpg" width="60" alt="" />
+        <img class="test" src="./assets/product_img.jpg" width="60" alt="" />
+        <img class="test" src="./assets/product_img.jpg" width="60" alt="" />
+        <img class="test" src="./assets/product_img.jpg" width="60" alt="" />
+        <img class="test" src="./assets/product_img.jpg" width="60" alt="" />
+      </div>
+      <div class="product-main-image">
+        <img class="test" src="./assets/product_img.jpg" width="300" alt="" />
+      </div>
+    </div>
+    <div class="product-d-details">
+      <p class="product-title">
+        G900 Stereo Gaming Headset for PS4/PS5, PC, Xbox One/Xbox One X/S and
+        MacOS (Blue)
+      </p>
+      <div class="product-rating">
+        <div>
+          <div>
+            4.3 <img src="./assets/rating_img.png" height="20px" alt="" />
+          </div>
+        </div>
+        <p>731 Ratings</p>
+      </div>
+      <div class="product-price">
+        <div>
+          <h2 id="oldPrice"></h2>
+          <p>-25%</p>
+          <h1 class="price">450EGP</h1>
+        </div>
+      </div>
+
+      <div class="product-color-selection">
+        <p>Colors: <b>all</b></p>
+        <div class="product-color-options">
+          <div class="option">
+            <img class="test" src="./assets/product_img.jpg" alt="" width="30px" />
+            <p>Black</p>
+          </div>
+          <div class="option">
+            <img class="test" src="./assets/product_img.jpg" alt="" width="30px" />
+            <p>Pink</p>
+          </div>
+          <div class="option">
+            <img class="test" src="./assets/product_img.jpg" alt="" width="30px" />
+            <p>Green</p>
+          </div>
+          <div class="option">
+            <img class="test" src="./assets/product_img.jpg" alt="" width="30px" />
+            <p>Purple</p>
+          </div>
+          <div class="option">
+            <img class="test" src="./assets/product_img.jpg" alt="" width="30px" />
+            <p>Red</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <p><b>Brand</b></p>
+        <p>Gomio</p>
+        <p><b>Model Name</b></p>
+        <p>G9000</p>
+        <p><b>Color</b></p>
+        <p>Blue</p>
+        <p><b>Form Factor</b></p>
+        <p>Headset</p>
+      </div>
+    </div>
+
+    <div class="product-d-purchase">
+      <div class="title">
+        <h3>Buy</h3>
+        <img src="./assets/circle_icon.png" width="20px" alt="" />
+      </div>
+      <h1 class="price">450 <b>EGP</b></h1>
+    </div>
+  </div>
+  <footer>
+    <a href="#top">
+      <div class="navFooterBackToTop">Back to top </div>
+    </a>
+    <div class="footerParent">
+      <div>
+        <h4>Get to Know Us</h4>
+        <ul>
+          <li>
+            <a href="/-/en/b?node=22624915031">About Amazon</a>
+          </li>
+          <li>
+            <a href="http://amazon.jobs">Careers</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.science">Amazon Science</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Shop with Us</h4>
+        <ul>
+          <li>
+            <a href="/-/en/b?node=22624915031">Your Account</a>
+          </li>
+          <li>
+            <a href="http://amazon.jobs">Your Orders</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.science">Your Addresses</a>
+          </li>
+          <li>
+            <a href="http://amazon.jobs">Your Lists</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Make Money with Us</h4>
+        <ul>
+          <li>
+            <a href="/-/en/b?node=22624915031">Protect and build your brand</a>
+          </li>
+          <li>
+            <a href="http://amazon.jobs">Advertise Your Products</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.science">Sell on Amazon</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.science">Fulfillment by Amazon</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Let Us Help You</h4>
+        <ul>
+          <li>
+            <a href="/-/en/b?node=22624915031">Help</a>
+          </li>
+          <li>
+            <a href="http://amazon.jobs">Shipping & Delivery</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.science">Returns & Replacements</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.science">Amazon App Download</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="footerParent">
+      <img src="./assets/amazon_logo.png" class="footerLogo" alt="Amazon Logo" />
+      <button><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/2560px-Flag_of_Egypt.svg.png"
+          alt="" class="btnImg">
+        <p style="color: white;display: inline-block;">Egypt</p>
+      </button>
+    </div>
+    <div class="footerParent2">
+      <div class="footerChild">
+        <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+
+          <p class="para1">Amazon Advertising</p>
+          <p class="para2">Find, attract, and engage customers</p>
+        </a>
+        <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+          <p class="para1">Sell on Amazon.ae</p>
+          <p class="para2">Sell globally, start with UAE</p>
+        </a>
+        <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+          <p class="para1">Sell on Amazon.ae</p>
+          <p class="para2">Sell globally, start with UAE</p>
+        </a>
+        <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+          <p class="para1">Amazon Web Services</p>
+          <p class="para2">Scalable Cloud Computing Services</p>
+        </a>
+        <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+          <p class="para1">Goodreads</p>
+          <p class="para2">Book reviews & recommendations</p>
+        </a>
+        <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+          <p class="para1">Audible</p>
+          <p class="para2">Download Audio Books</p>
+        </a>
+        <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+          <p class="para1">IMDb</p>
+          <p class="para2">Movies, TV & Celebrities</p>
+        </a>
+        <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+          <p class="para1">Alexa</p>
+          <p class="para2">Actionable Analytics for the Web</p>
+        </a>
+        <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+          <p class="para1">Shopbop</p>
+          <p class="para2">Designer Fashion Brands</p>
+        </a>
+      </div>
+      <div class="footerChild2">
+        <a href="#">Conditions of Use & Sale</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Interest-Based Ads</a>
+        <p>©1996–2024, Amazon.com, Inc. or its affiliates</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="product.js"></script>
+  <script src="ajax.js"></script>
+
+</body>
+
+</html>

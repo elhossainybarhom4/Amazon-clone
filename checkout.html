@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ajax.css" />
+    <link rel="stylesheet" href="checkout.css" />
+</head>
+
+<body>
+    <nav id="top">
+        <a href="/"><img src="./assets/amazon_logo.png" width="100" alt="Amazon Logo" /></a>
+        <div class="nav-country">
+          <img src="./assets/location_icon.png" height="20" alt="Country" />
+          <div>
+            <p>Deliver to</p>
+            <h1>Qena, Egypt</h1>
+          </div>
+        </div>
+        <div class="nav-search">
+          <div class="nav-search-category">
+            <a href="./ajax.html">
+    
+              <p>All</p>
+              <img src="./assets/dropdown_icon.png" height="12" alt="Dropdown" />
+            </a>
+          </div>
+          <!-- <input type="text" class="nav-search-input" placeholder="Search" />
+          <img
+            src="./assets/search_icon.png"
+            alt="Search"
+            class="nav-search-icon"
+          /> -->
+          <input type="text" id="searchInput" placeholder="Search products...">
+          <br>
+          <ul id="results"></ul>
+          <select id="productOptions" style="display: none;"></select>
+        </div>
+        <div class="nav-language">
+          <img src="./assets/us_flag.png" width="25px" alt="Language-EN" />
+          <p>EN</p>
+          <img src="./assets/dropdown_icon.png" width="8px" />
+        </div>
+        <div class="nav-text">
+          <p>Hello, Sign in</p>
+          <h1>
+            Account & Lists
+            <img src="./assets/dropdown_icon.png" width="8px" alt="" />
+          </h1>
+        </div>
+        <div class="nav-text">
+          <p>Return</p>
+          <h1>& Orders</h1>
+        </div>
+        <a href="checkout.html" class="nav-cart">
+          <div class="cart-quantity js-cart-quantity" style="color: orange">
+            0
+          </div>
+          <img src="./images/icons/cart-icon.png" alt="Cart" width="35px" />
+          <div class="cart-text">Cart</div>
+        </a>
+      </nav>
+
+    <div class="main">
+        <div class="page-title">Review your order</div>
+
+        <div class="checkout-grid">
+            <div class="order-summary js-order-summary">
+            </div>
+
+            <div class="payment-summary">
+                <div class="payment-summary-title">Order Summary</div>
+
+                <div class="payment-summary-row">
+                    <div>Items (3):</div>
+                    <div class="payment-summary-money">$42.75</div>
+                </div>
+
+                <div class="payment-summary-row">
+                    <div>Shipping &amp; handling:</div>
+                    <div class="payment-summary-money">$4.99</div>
+                </div>
+
+                <div class="payment-summary-row subtotal-row">
+                    <div>Total before tax:</div>
+                    <div class="payment-summary-money">$47.74</div>
+                </div>
+
+                <div class="payment-summary-row">
+                    <div>Estimated tax (10%):</div>
+                    <div class="payment-summary-money">$4.77</div>
+                </div>
+
+                <div class="payment-summary-row total-row">
+                    <div>Order total:</div>
+                    <div id="total-price" class="payment-summary-money">$52.51</div>
+                </div>
+
+                <button class="place-order-button button-primary">
+                    Place your order
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#top">
+            <div class="navFooterBackToTop">Back to top</div>
+        </a>
+        <div class="footerParent">
+            <div>
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li>
+                        <a href="/-/en/b?node=22624915031">About Amazon</a>
+                    </li>
+                    <li>
+                        <a href="http://amazon.jobs">Careers</a>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.science">Amazon Science</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Shop with Us</h4>
+                <ul>
+                    <li>
+                        <a href="/-/en/b?node=22624915031">Your Account</a>
+                    </li>
+                    <li>
+                        <a href="http://amazon.jobs">Your Orders</a>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.science">Your Addresses</a>
+                    </li>
+                    <li>
+                        <a href="http://amazon.jobs">Your Lists</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li>
+                        <a href="/-/en/b?node=22624915031">Protect and build your brand</a>
+                    </li>
+                    <li>
+                        <a href="http://amazon.jobs">Advertise Your Products</a>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.science">Sell on Amazon</a>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.science">Fulfillment by Amazon</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li>
+                        <a href="/-/en/b?node=22624915031">Help</a>
+                    </li>
+                    <li>
+                        <a href="http://amazon.jobs">Shipping & Delivery</a>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.science">Returns & Replacements</a>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.science">Amazon App Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <div class="footerParent">
+            <img src="./assets/amazon_logo.png" class="footerLogo" alt="Amazon Logo" />
+            <button>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/2560px-Flag_of_Egypt.svg.png"
+                    alt="" class="btnImg" />
+                <p style="color: white; display: inline-block">Egypt</p>
+            </button>
+        </div>
+        <div class="footerParent2">
+            <div class="footerChild">
+                <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+                    <p class="para1">Amazon Advertising</p>
+                    <p class="para2">Find, attract, and engage customers</p>
+                </a>
+                <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+                    <p class="para1">Sell on Amazon.ae</p>
+                    <p class="para2">Sell globally, start with UAE</p>
+                </a>
+                <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+                    <p class="para1">Sell on Amazon.ae</p>
+                    <p class="para2">Sell globally, start with UAE</p>
+                </a>
+                <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+                    <p class="para1">Amazon Web Services</p>
+                    <p class="para2">Scalable Cloud Computing Services</p>
+                </a>
+                <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+                    <p class="para1">Goodreads</p>
+                    <p class="para2">Book reviews & recommendations</p>
+                </a>
+                <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+                    <p class="para1">Audible</p>
+                    <p class="para2">Download Audio Books</p>
+                </a>
+                <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+                    <p class="para1">IMDb</p>
+                    <p class="para2">Movies, TV & Celebrities</p>
+                </a>
+                <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+                    <p class="para1">Alexa</p>
+                    <p class="para2">Actionable Analytics for the Web</p>
+                </a>
+                <a href="https://advertising.amazon.com/?ref=footer_advtsing_2_eg">
+                    <p class="para1">Shopbop</p>
+                    <p class="para2">Designer Fashion Brands</p>
+                </a>
+            </div>
+            <div class="footerChild2">
+                <a href="#">Conditions of Use & Sale</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Interest-Based Ads</a>
+                <p>©1996–2024, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+    <script src="ajax.js"></script>
+    <script>
+        var cartNum = document.getElementsByClassName('cart-quantity js-cart-quantity')[0]
+        var totalDiv = document.getElementById('total-price')
+        counter = localStorage.getItem('cartCount')
+        console.log(counter);
+        cartNum.innerHTML = counter
+        var count = counter
+        var total = 0
+        totalDiv.innerHTML = total + '$'
+        var postProd = document.getElementsByClassName('order-summary js-order-summary')[0]
+        var arryProduct = JSON.parse(localStorage.getItem('arr'));
+        for (let i = 0; i < localStorage.getItem('cartCount'); i++) {
+            let mainDiv = document.createElement('div');
+            mainDiv.classList = 'main-div'
+
+            let innerDiv = document.createElement('div');
+            innerDiv.style.width = '40%';
+
+            let img = document.createElement('img');
+            img.src = arryProduct[i].productImg
+            img.classList = 'img-product'
+            mainDiv.appendChild(img);
+
+
+            let productName = document.createElement('h3');
+            productName.innerHTML = arryProduct[i].productName
+            productName.classList = 'product-name'
+            innerDiv.appendChild(productName);
+
+
+            let productPrice = document.createElement('h4');
+            productPrice.innerHTML = arryProduct[i].productPrice / 100 + '$'
+            productPrice.classList = 'product-price'
+            innerDiv.appendChild(productPrice);
+
+
+            total += arryProduct[i].productPrice / 100
+            totalDiv.innerHTML = total + '$'
+            function removeItem(index) {
+                // total -= arryProduct[i].productPrice / 100
+                // totalDiv.innerHTML = total + '$'
+                arryProduct.splice(index, 1);
+                mainDiv.remove()
+                localStorage.setItem('arr', JSON.stringify(arryProduct));
+                count -= 1
+                cartNum.innerHTML = count
+                console.log(total);
+                localStorage.setItem('cartCount', count)
+            }
+            let removeButton = document.createElement('button');
+            removeButton.textContent = 'remove';
+            removeButton.classList = 'remove-button '
+            innerDiv.appendChild(removeButton);
+            mainDiv.appendChild(innerDiv);
+            removeButton.addEventListener('click', function () {
+                removeItem(i)
+            })
+            postProd.appendChild(mainDiv);
+            totalDiv.innerHTML = total + '$'
+            console.log(total);
+        }
+
+
+    </script>
+    <script src="ajax.js"></script>
+
+</body>
+
+</html>
